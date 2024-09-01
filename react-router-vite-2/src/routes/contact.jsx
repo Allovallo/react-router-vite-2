@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { Form, useLoaderData } from "react-router-dom";
 import { getContact } from "../contacts";
 
@@ -23,7 +24,8 @@ export default function Contact() {
         <img
           key={contact.avatar}
           src={
-            contact.avatar ||
+            contact.avatar
+            ||
             `https://robohash.org/${contact.id}.png?size=200x200`
           }
         />
